@@ -21,7 +21,5 @@ variable "settings" {
 }
 
 variable "databases" {
-  type = list(object({
-    name = string
-  }))
+  type = list(string)
 }
