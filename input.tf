@@ -23,3 +23,7 @@ variable "settings" {
 variable "databases" {
   type = list(string)
 }
+
+variable "root_password" {
+  type = string
+}

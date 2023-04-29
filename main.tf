@@ -3,11 +3,11 @@ resource "google_sql_database_instance" "this" {
   name             = var.server_name
   region           = var.region
   database_version = var.database_version
+  root_password = var.root_password
   settings {
     tier = var.settings.tier
   }
-
-  deletion_protection = "true"
+  deletion_protection = "false"
 }
 
 resource "google_sql_database" "this" {
