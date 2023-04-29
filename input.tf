@@ -27,3 +27,10 @@ variable "databases" {
 variable "root_password" {
   type = string
 }
+
+variable "default_user" {
+  type = object({
+    name     = string
+    password = string
+  })
+}
